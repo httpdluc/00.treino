@@ -17,8 +17,11 @@ export const problem = (lines) => {
         }
         if(a*a < b*b + c*c){
             mensagem.push("TRIANGULO ACUTANGULO")
-        }else if(a==b && b == c){
+        }if(a==b && b == c){
             mensagem.push("TRIANGULO EQUILATERO")
+        }
+        else if(a == b || a == c || b == c){
+            mensagem.push("TRIANGULO ISOSCELES")
         }
         return mensagem.join("\n")
     }
