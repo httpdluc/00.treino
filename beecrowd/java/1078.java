@@ -5,7 +5,7 @@ public class 1078 {
         Scanner sc = new Scanner (System.in);
         int valor = sc.nextInt();
 
-        for(int x = 1; x < 11; x++){
+        for(int x = 1; x <= 10; x++){
             int res = valor * x;
             System.out.println(x + " x " + valor + " = " + res);
         }
